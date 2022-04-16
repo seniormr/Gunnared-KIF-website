@@ -4,7 +4,10 @@ body {
   }
 
   .first-team li {
+    display: inline-block;
     list-style-type: none;
+    padding-left: 1em;
+    
   }
   
   .image-grid {
@@ -34,12 +37,21 @@ body {
   .image-grid-row-2 {
     grid-row: span 2;
   }
-  
+  .image-grid > h1 {
+    text-align: center;
+    margin: auto;
+  }
   /* Anything udner 1024px */
   @media screen and (max-width: 1024px) {
     .image-grid {
       --num-cols: 2;
       --row-height: 200px;
     }
+
   }
-  
+  /* Navigation links */
+  #menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
